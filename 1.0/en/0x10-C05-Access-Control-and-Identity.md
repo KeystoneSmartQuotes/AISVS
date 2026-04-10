@@ -87,7 +87,7 @@ Control permissions for AI agents and autonomous systems through scoped capabili
 | **5.6.1** | **Verify that** autonomous agents receive scoped capability tokens that explicitly enumerate permitted actions, accessible resources, time boundaries, and operational constraints. | 1 |
 | **5.6.2** | **Verify that** high-risk capabilities (file system access, code execution, external API calls, financial transactions) are disabled by default and require explicit authorization. | 1 |
 | **5.6.3** | **Verify that** capability tokens are bound to user sessions, include cryptographic integrity protection, and cannot be persisted or reused across sessions. | 2 |
-| **5.6.4** | **Verify that** agent-initiated actions undergo authorization through a policy decision point that evaluates contextual attributes (e.g., user identity, resource sensitivity, action type, environmental context). | 3 |
+| **5.6.4** |**Verify that** agent-initiated actions undergo authorization through a policy decision point that evaluates contextual attributes (e.g., user identity, resource sensitivity, action type, environmental context) and that is isolated from the agent's execution environment such that a compromised or manipulated agent runtime cannot influence or bypass the evaluation. | 3 | V |
 
 ---
 
